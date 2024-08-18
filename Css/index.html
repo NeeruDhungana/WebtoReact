@@ -7,51 +7,52 @@
     <title>Document</title>
   </head>
   <style>
-    .bx>h1 {
+    .bx h1:hover {
+      background-color: blueviolet;
+
+    }
+
+    li:first-child {
       color: red;
     }
 
-    h1 {
-      color: red;
-
+    li:nth-child(2n+1) {
+      color: rgb(255, 192, 194);
     }
 
-    p {
-      color: violet;
-    }
-
-    header {}
-
-    #unique {
+    p::before {
+      content: 'Hello';
       color: green;
+      font-size: 50px;
     }
 
-    .bx h3 {
-      color: brown;
+    img[alt="some"] {
+      border-radius: 50%;
+    }
+
+    img[alt="new"] {
+      border-radius: 50%;
     }
   </style>
   <link rel="stylesheet" href="style.css">
 
   <body>
-    <header>
-      <h1>Web JEE</h1>
-      <hr>
-    </header>
-    <div id="unique">
-      <h2>Hello See</h2>
-    </div>
+    <img
+      src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="some" height="200px" width="200px">
+    <br>
+    <img
+      src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="new" height="200px" width="200px">
+    <!-- <ol>
+      <li>I am Neeru</li>
+      <li>I am Neeru</li>
+      <li>I am Neeru</li>
+      <li>I am Neeru</li>
+      <li>I am Neeru</li>
+    </ol>
 
-    <div id="unique">
-      <h2>Unique Id</h2>
-
-    </div>
-    <div class="bx">
-      <h3>Bx Control</h3>
-    </div>
-    <hr>
-    <h3>Hello see</h3>
-
-    <!-- <h1>Hello CSS</h1>
+    <h1 class="bx">Hello CSS</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere natus est consectetur aspernatur in expedita
       inventore asperiores nihil itaque, officia iusto. Nobis autem accusamus ipsam debitis porro eos asperiores
       perferendis!</p> -->
