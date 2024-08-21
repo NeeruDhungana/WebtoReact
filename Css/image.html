@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .b {
+        height: 400px;
+        width: 300px;
+        border: 2px solid white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        animation: moveBox 4s ease-in-out infinite;
+
+      }
+
+      .b img {
+        height: 80%;
+        width: 100%;
+
+
+
+      }
+
+      @keyframes moveBox {
+        0% {
+          transform: translate(0, 0);
+          /* Starting position */
+        }
+
+        25% {
+          transform: translate(800px, 0);
+          /* Move right */
+        }
+
+        50% {
+          transform: translate(800px, 300px);
+          /* Move down */
+        }
+
+        75% {
+          transform: translate(0, 300px);
+          /* Move left (right and up) */
+        }
+
+        100% {
+          transform: translate(0, 0);
+          /* Move up to original position */
+        }
+      }
+
+
+      @keyframes moveBottom {
+        0% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(100px);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="b">
+      <img
+        src="https://images.unsplash.com/photo-1685305145522-9b4b162e8b73?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+        alt="">
+      <div>
+        <p>Photography captures moments in time, freezing them into images that evoke emotion</p>
+      </div>
+    </div>
+
+  </body>
+
+</html>
